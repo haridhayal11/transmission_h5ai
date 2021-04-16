@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt install transmission-cli transmission-common transmission-daemon apache2 php unzip -y
+wget https://raw.githubusercontent.com/haridhayal11/transmission_h5ai/master/settings.json
 sudo systemctl stop transmission-daemon
 sudo usermod -a -G debian-transmission user
 sudo rm /etc/transmission-daemon/settings.json
@@ -18,7 +19,7 @@ cd /var/www/html/
 sudo wget https://release.larsjung.de/h5ai/h5ai-0.30.0.zip
 sudo unzip h5ai-0.30.0.zip
 sudo rm -rf *.zip
-echo DirectoryIndex  index.html  index.php  /_h5ai/public/index.php > /etc/apache2/apache2.conf
+echo DirectoryIndex  index.html  index.php  /_h5ai/public/index.php >> /etc/apache2/apache2.conf
 sudo chgrp debian-transmission /var/www/html
 sudo chmod -R g+rw /var/www/html
 
