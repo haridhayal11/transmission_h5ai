@@ -3,8 +3,8 @@ A script to install and setup transmission and h5ai file index.
 
 ## Features
 
-Transmission webui will be available at http://serverip:9091
-h5ai will be available at http://serverip
+Transmission webui will be available at http://ipaddress:9091
+h5ai will be available at http://ipaddress
 
 
 ## Usage
