@@ -14,7 +14,7 @@ sudo ufw allow 9091
 sudo ufw allow 52204
 sudo ufw allow 80
 
-sudo rm -rf /var/www/html/*
+sudo rm -rf /var/www/html/_h5ai
 cd /var/www/html/
 sudo wget https://release.larsjung.de/h5ai/h5ai-0.30.0.zip
 sudo unzip h5ai-0.30.0.zip
